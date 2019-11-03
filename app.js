@@ -32,7 +32,13 @@ function hasUniquePairs(tokens) {
 }
 
 function send(tokens) {
-    console.log(tokens);
+    tokens.map(token => {
+        client.messages.create({
+            body: `Hello ${token.from.name}, your Kris Kringle is: ${token.to.name}`,
+            from: mobile,
+            to: token.from.mobile
+        }).then(message => console.log(`SENT: ${message.sid} TO: ${token.from.mobile}`));
+    });
 }
 
 function app() {
