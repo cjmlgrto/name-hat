@@ -11,7 +11,7 @@ const client = require('twilio')(accountSid, authToken);
 
 function testSMS() {
     client.messages.create({
-        body: `This is a test`,
+        body: `Hello Person A, your Kris Kringle is: Person B`,
         from: mobile,
         to: testNumber
     }).then(message => console.log(`SENT: ${message.sid} TO: ${testNumber}`));

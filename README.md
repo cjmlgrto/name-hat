@@ -1,4 +1,6 @@
-# SMS Name Draw
+# SMS Kris Kringle Assigner
+
+!["Hello Person A, your Kris Kringle is Person B"](https://user-images.githubusercontent.com/1712450/68079376-796a1900-fe3c-11e9-8fbf-b1b185052ced.PNG)
 
 It's a Kris Kringle name draw, done automatically and over SMS. Given a list of members and their phone numbers, each member is sent a text message of the name of another member (randomly drawn) from the list. The name-drawing algorithm has been written to ensure not a single person draws their own name.
 
