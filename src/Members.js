@@ -1,24 +1,17 @@
-const Members = [
+module.exports = [
     {
         ID: 0,
-        name: 'A',
-        mobile: '+61000000000',
+        name: 'Person A',
+        mobile: null,
     },
     {
         ID: 1,
-        name: 'B',
-        mobile: '+61000000000',
+        name: 'Person B',
+        mobile: null,
     },
     {
         ID: 2,
-        name: 'C',
-        mobile: '+61000000000',
-    },
-    {
-        ID: 3,
-        name: 'D',
-        mobile: '+61000000000',
+        name: 'Person C',
+        mobile: null,
     },
 ]
-
-module.exports = Members
