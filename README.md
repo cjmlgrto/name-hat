@@ -13,6 +13,7 @@ It's a Kris Kringle name draw, done automatically and over SMS. Given a list of 
 
 1. Rename `.env.example` to `.env` and populate the missing fields as per your Twilio account
 2. Rename `src/members.example.js` to `src/members.js` and populate it accordingly
+3. Run `npm install` to install the necessary dependencies.
 
 ## Usage
 

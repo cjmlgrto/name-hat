@@ -34,7 +34,7 @@ function hasUniquePairs(tokens) {
 function send(tokens) {
     tokens.map(token => {
         client.messages.create({
-            body: `Hello ${token.from.name}, your Kris Kringle is: ${token.to.name}`,
+            body: `Hello ${token.from.name}, you will be buying a gift for: ${token.to.name}. View the family wishlist here: http://fam.my-wishes.me`,
             from: mobile,
             to: token.from.mobile
         }).then(message => console.log(`SENT: ${message.sid} TO: ${token.from.mobile}`));
