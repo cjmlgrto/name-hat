@@ -1,5 +1,13 @@
-const Hat = require('./src/Hat.js');
-const Members = require('./src/Members.js');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const accountSid = process.env.TWILIO_ACCOUNT_SID
+const authToken = process.env.TWILIO_AUTH_TOKEN
+const mobile = process.env.TWILIO_MOBILE
+
+const members = require('./src/members.js');
+const client = require('twilio')(accountSid, authToken);
+const Hat = require('./src/hat.js');
 
 function assign(members) {
     let tokens = [];
@@ -24,15 +32,21 @@ function hasUniquePairs(tokens) {
 }
 
 function send(tokens) {
-    console.log(tokens);
+    tokens.map(token => {
+        client.messages.create({
+            body: `Hello ${token.from.name}, your Kris Kringle is: ${token.to.name}`,
+            from: mobile,
+            to: token.from.mobile
+        }).then(message => console.log(`SENT: ${message.sid} TO: ${token.from.mobile}`));
+    });
 }
 
-function run() {
-    let tokens = assign(Members);
+function app() {
+    let tokens = assign(members);
     while (!hasUniquePairs(tokens)) {
-        tokens = assign(Members);
+        tokens = assign(members);
     }
     send(tokens);
 }
 
-run();
+app();

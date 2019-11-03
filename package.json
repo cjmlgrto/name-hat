@@ -1,0 +1,26 @@
+{
+  "name": "name-hat",
+  "version": "1.0.0",
+  "description": "Draw names from a hat",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js",
+    "test-draw": "node tests/test-draw.js",
+    "test-sms": "node tests/test-sms.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjmlgrto/name-hat.git"
+  },
+  "author": "Carlos Melegrito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjmlgrto/name-hat/issues"
+  },
+  "homepage": "https://github.com/cjmlgrto/name-hat#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twilio": "^3.37.0"
+  }
+}
