@@ -4,7 +4,8 @@
   "description": "Draw names from a hat",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "run": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/cjmlgrto/name-hat#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "twilio": "^3.37.0"
   }
 }
