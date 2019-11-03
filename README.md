@@ -7,7 +7,7 @@ It's a Kris Kringle name draw, done automatically and over SMS. Given a list of 
 ## Requirements
 
 * NodeJS
-* A [Twilio](twilio.com/) account, with [SMS messaging enabled](https://www.twilio.com/docs/sms/quickstart/node#install-nodejs-and-the-twilio-module)
+* A [Twilio](https://twilio.com/) account, with [SMS messaging enabled](https://www.twilio.com/docs/sms/quickstart/node#install-nodejs-and-the-twilio-module)
 
 ## Setup
 
