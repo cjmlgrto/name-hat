@@ -4,7 +4,10 @@
   "description": "Draw names from a hat",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "start": "node app.js",
+    "test-draw": "node tests/test-draw.js",
+    "test-sms": "node tests/test-sms.js"
   },
   "repository": {
     "type": "git",
